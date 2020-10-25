@@ -46,7 +46,6 @@ import { URLSafePipe } from './url.pipe';
     FilesComponent,
     InvalidConfigComponent,
     JobStatusComponent,
-    LayerProgressComponent,
     LongPress,
     MainMenuComponent,
     MainScreenComponent,

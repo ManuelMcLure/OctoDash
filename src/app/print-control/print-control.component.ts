@@ -5,7 +5,6 @@ import { take } from 'rxjs/operators';
 
 import { ConfigService } from '../config/config.service';
 import { Job, JobService, JobStatus } from '../job.service';
-import { DisplayLayerProgressAPI, LayerProgressService } from '../plugin-service/layer-progress.service';
 import { PrinterService, PrinterStatusAPI } from '../printer.service';
 
 @Component({
@@ -30,7 +29,6 @@ export class PrintControlComponent implements OnInit, OnDestroy {
   public constructor(
     private jobService: JobService,
     private printerService: PrinterService,
-    private displayLayerProgressService: LayerProgressService,
     private configService: ConfigService,
     private router: Router,
   ) {
@@ -167,13 +165,6 @@ export class PrintControlComponent implements OnInit, OnDestroy {
       .subscribe((printerStatus: PrinterStatusAPI): void => {
         this.temperatureHotend = printerStatus.nozzle.set;
         this.temperatureHeatbed = printerStatus.heatbed.set;
-      });
-
-    this.displayLayerProgressService
-      .getObservable()
-      .pipe(take(1))
-      .subscribe((layerProgress: DisplayLayerProgressAPI): void => {
-        this.fanSpeed = Number(layerProgress.fanSpeed);
       });
   }
 
