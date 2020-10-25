@@ -314,7 +314,6 @@ interface Filament {
 }
 
 interface Plugins {
-  displayLayerProgress: Plugin;
   enclosure: EnclosurePlugin;
   filamentManager: Plugin;
   preheatButton: Plugin;
@@ -466,7 +465,6 @@ const schema = {
       $id: '#/properties/plugins',
       type: 'object',
       required: [
-        'displayLayerProgress',
         'enclosure',
         'filamentManager',
         'preheatButton',
@@ -474,18 +472,7 @@ const schema = {
         'psuControl',
       ],
       properties: {
-        displayLayerProgress: {
-          $id: '#/properties/plugins/properties/displayLayerProgress',
-          type: 'object',
-          required: ['enabled'],
-          properties: {
-            enabled: {
-              $id: '#/properties/plugins/properties/displayLayerProgress/properties/enabled',
-              type: 'boolean',
-            },
-          },
-        },
-        enclosure: {
+       enclosure: {
           $id: '#/properties/plugins/properties/enclosure',
           type: 'object',
           required: ['enabled', 'ambientSensorID', 'filament1SensorID', 'filament2SensorID'],

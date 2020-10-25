@@ -262,10 +262,7 @@ export class NoConfigComponent implements OnInit {
         useM600: false,
       },
       plugins: {
-        displayLayerProgress: {
-          enabled: true,
-        },
-        enclosure: {
+       enclosure: {
           enabled: false,
           ambientSensorID: null,
           filament1SensorID: null,

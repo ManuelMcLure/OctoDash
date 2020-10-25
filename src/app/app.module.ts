@@ -22,7 +22,6 @@ import { FilamentComponent } from './filament/filament.component';
 import { FilesComponent } from './files/files.component';
 import { JobStatusComponent } from './job-status/job-status.component';
 import { JobService } from './job.service';
-import { LayerProgressComponent } from './layer-progress/layer-progress.component';
 import { LongPress } from './long-press.directive';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
