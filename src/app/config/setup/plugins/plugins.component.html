@@ -1,11 +1,5 @@
 <span class="setup__text">What plugins are you running?</span>
 <div style="text-align: center">
-  <div class="setup__checkbox-container">
-    <span class="setup__checkbox">
-      <span class="setup__checkbox-checked setup__checkbox-checked-disabled" *ngIf="displayLayerProgressPlugin"></span>
-    </span>
-    Display Layer Progress&nbsp;&nbsp;
-  </div>
   <div class="setup__checkbox-container" (click)="changeEnclosurePlugin()">
     <span class="setup__checkbox">
       <span class="setup__checkbox-checked" *ngIf="enclosurePlugin"></span>

@@ -6,24 +6,17 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./plugins.component.scss', '../setup.component.scss'],
 })
 export class PluginsComponent {
-  @Input() displayLayerProgressPlugin: boolean;
   @Input() enclosurePlugin: boolean;
   @Input() filamentManagerPlugin: boolean;
   @Input() preheatButtonPlugin: boolean;
   @Input() printTimeGeniusPlugin: boolean;
   @Input() psuControlPlugin: boolean;
 
-  @Output() displayLayerProgressPluginChange = new EventEmitter<boolean>();
   @Output() enclosurePluginChange = new EventEmitter<boolean>();
   @Output() filamentManagerPluginChange = new EventEmitter<boolean>();
   @Output() preheatButtonPluginChange = new EventEmitter<boolean>();
   @Output() printTimeGeniusPluginChange = new EventEmitter<boolean>();
   @Output() psuControlPluginChange = new EventEmitter<boolean>();
-
-  public changeDisplayLayerProgressPlugin(): void {
-    this.displayLayerProgressPlugin = !this.displayLayerProgressPlugin;
-    this.displayLayerProgressPluginChange.emit(this.displayLayerProgressPlugin);
-  }
 
   public changeEnclosurePlugin(): void {
     this.enclosurePlugin = !this.enclosurePlugin;

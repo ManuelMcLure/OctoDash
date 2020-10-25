@@ -28,7 +28,6 @@ import { FilamentComponent } from './filament/filament.component';
 import { FilesComponent } from './files/files.component';
 import { JobService } from './job.service';
 import { JobStatusComponent } from './job-status/job-status.component';
-import { LayerProgressComponent } from './layer-progress/layer-progress.component';
 import { LongPress } from './long-press.directive';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
@@ -52,7 +51,6 @@ import { URLSafePipe } from './url.pipe';
     FilesComponent,
     ConfigInvalidComponent,
     JobStatusComponent,
-    LayerProgressComponent,
     LongPress,
     MainMenuComponent,
     MainScreenComponent,

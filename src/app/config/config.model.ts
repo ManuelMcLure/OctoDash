@@ -48,7 +48,6 @@ interface Filament {
 }
 
 interface Plugins {
-  displayLayerProgress: Plugin;
   enclosure: EnclosurePlugin;
   filamentManager: Plugin;
   preheatButton: Plugin;

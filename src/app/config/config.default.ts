@@ -26,9 +26,6 @@ export const defaultConfig: Config = {
     useM600: false,
   },
   plugins: {
-    displayLayerProgress: {
-      enabled: true,
-    },
     enclosure: {
       enabled: false,
       ambientSensorID: null,

@@ -105,7 +105,6 @@ export const configSchema = {
       $id: '#/properties/plugins',
       type: 'object',
       required: [
-        'displayLayerProgress',
         'enclosure',
         'filamentManager',
         'preheatButton',
@@ -113,17 +112,6 @@ export const configSchema = {
         'psuControl',
       ],
       properties: {
-        displayLayerProgress: {
-          $id: '#/properties/plugins/properties/displayLayerProgress',
-          type: 'object',
-          required: ['enabled'],
-          properties: {
-            enabled: {
-              $id: '#/properties/plugins/properties/displayLayerProgress/properties/enabled',
-              type: 'boolean',
-            },
-          },
-        },
         enclosure: {
           $id: '#/properties/plugins/properties/enclosure',
           type: 'object',
